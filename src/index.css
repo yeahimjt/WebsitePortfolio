@@ -16,6 +16,7 @@ body {
 }
 :root {
   --black-darkest: #000000;
+  --black-darker: #0A0A0A;
   --black-lightest: #333333;
   --white-lightest: #FFFFFF;
   --cyan: #49B9B5;

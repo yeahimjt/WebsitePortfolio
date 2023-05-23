@@ -3,6 +3,8 @@ import Homepage from './containers/Homepage';
 import Nav from './components/Nav';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Profile from './containers/Profile';
+import Projects from './containers/Projects';
 // ..
 AOS.init();
 export const ThemeContext = createContext(null)
@@ -19,6 +21,7 @@ function App() {
         <Nav/>
         </div>
         <Homepage />
+        <Projects />
       </div>
     </ThemeContext.Provider>
   );

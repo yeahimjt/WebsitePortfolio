@@ -42,7 +42,7 @@ const Homepage = () => {
         <div className={theme==="light" ? "leading-tight relative text-[color:var(--black-darkest)] select-none mx-8 homepage-text:mx-0" : "leading-tight relative text-[color:var(--white-lightest)] select-none mx-8 homepage-text:mx-0"}>
             <h4 className="text-sm  font-paragraph top-3 homepage-hi3:left-32 relative left-0 homepage-hi4:left-20 -rotate-2 animate-slightrotate homepage-hi:left-0 homepage-hi2:left-4">Hi! I'm,</h4>
             <div>
-                <div className="flex flex-row flex-wrap gap-6 gap-y-0 justify-center">
+                <div className={theme==="light"? "flex flex-row flex-wrap gap-6 gap-y-0 justify-center text-[color:var(--red)]":"flex flex-row flex-wrap gap-6 gap-y-0 justify-center text-[color:var(--cyan)]"}>
                     <div className="flex font-heading text-big gap-1 h-[90px]">
                     {Letters.map((letter, index) =>
                         <MovingComponent

@@ -11,6 +11,10 @@ module.exports = {
         'homepage-hi4': '400px',
         'mobile': '620px',
       },
+      borderRadius: {
+        'right':'10px 0px 0px 10px',
+        'left':'0px 10px 10px 0px',
+      },
       backgroundImage: {
         'homepage': 'linear-gradient(180deg, #FFFFFF 0%, #F0EDE5 100%)',
         'homepage-dark': 'linear-gradient(180deg, #333333 0%, #1D1D1D 100%)',
@@ -32,6 +36,8 @@ module.exports = {
         slideright: 'slideright 0.5s ease-in-out forwards',
         wave: 'wave 1.2s linear ease-in-out',
         slightrotate: 'slightrotate 1s ease-in-out forwards',
+        clickhere: 'clickhere 2s ease-in-out infinite',
+
 
       },
       fontSize: {
@@ -69,6 +75,11 @@ module.exports = {
           '0%': { transform: 'rotate(0deg)' },
           '50%': {transform: 'rotate(2deg)'},
           '100%':   { transform: 'rotate(0deg)' }
+        },
+        clickhere: {
+          '0%': { transform: 'rotate(0deg) scale(.70)' },
+          '50%': {transform: 'rotate(5deg) scale(0.8)'},
+          '100%':   { transform: 'rotate(0deg) scale(.70)' }
         },
       }
     },
