@@ -5,6 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Profile from './containers/Profile';
 import Projects from './containers/Projects';
+import SkillTease from './containers/SkillTease';
+import AboutTease from './containers/AboutTease';
 // ..
 AOS.init();
 export const ThemeContext = createContext(null)
@@ -20,7 +22,10 @@ function App() {
         <div className="overflow-hidden w-full">
         <Nav/>
         </div>
+
         <Homepage />
+
+        <AboutTease />
         <Projects />
       </div>
     </ThemeContext.Provider>

@@ -54,12 +54,10 @@ const Projects = () => {
             </div>
       </div>
     }
-    <div className={theme==="light"?"bg-projects h-screen":"bg-projects-dark h-screen"}>
-        <div className={theme==="light" ? "bg-[color:var(--black-darker)] w-[400px] py-2 flex justify-end rounded-left pr-12" : "bg-[color:var(--white-lightest)] w-[400px] py-2 flex justify-end rounded-left pr-12"}>
-            <h1 className={theme==="light"? "font-heading text-big text-[color:var(--white-lightest)]" : "font-heading text-big text-[color:var(--black-darkest)]"}>Projects</h1>
-        </div>
+    <div className={theme==="light"?"bg-white h-screen":"bg-[color:var(--black)] h-screen"} id="projects">
+        <h1 className={theme==="light"? "mx-auto w-max pt-16 font-heading text-big leading-snug px-4 text-black" : "mx-auto w-max pt-16 font-heading text-big leading-snug px-4 text-white"}>Projects <br/><i className="text-[color:var(--light-blue)] text-med relative -top-12">that have cemented expertise and skills</i><section className="inline-block relative -top-7 left-2">.</section></h1>
         <div className="flex flex-col gap-x-6 gap-y-4 w-[70%] mx-auto pt-32">
-            <div className="flex gap-x-6 ">
+            <div className={theme==="light"?"flex gap-x-6 ":"flex gap-x-6 text-white"}>
                 <div className="flex-[0.50] flex items-center justify-center overflow-visible relative"  data-aos="fade-right">
                     <div className="relative py-16">
                         <img className="hover:scale-105 hover:cursor-pointer transition-all relative" src={CentralTech} alt="Central Tech Project View" onClick={()=>setCt(!ct)}/>
@@ -83,7 +81,7 @@ const Projects = () => {
                         <button className="w-[25%] border-2 border-[color:var(--red)] rounded-xl py-1">View Live</button>
                     </div>
                     <p className="font-paragraph leading-loose text-center pt-8">Immerse yourself in a seamless online shopping journey with my self-developed full stack e-commerce web application. It provides a comprehensive array of functionalities, allowing you to effortlessly browse, search, save, purchase, and filter products. I have meticulously implemented all the necessary pages to provide a complete and satisfying e-commerce experience.</p>
-                    <p className="italic font-paragraph text-xs text-center pt-4">Please allow website to load for 1-3 minutes. Server is hosted on render so data takes time to load. Once loaded the experience will be seamless.</p>
+                    <p className="italic font-paragraph text-xs text-center pt-4">Please allow website to load for 1-3 minutes. Server is hosted on <i className="text-[color:var(--light-blue)]">Render</i> so data takes time to load. Once loaded the experience will be seamless.</p>
                 </div>
             </div>
             <div className="bg-red-50">
