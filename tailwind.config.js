@@ -37,15 +37,15 @@ module.exports = {
         'paragraph': ['Fauna One','sans-serif'],
       },
       animation: {
-        slideup: 'slideup 0.5s ease-in-out forwards',
-        slidedown: 'slidedown 0.5s ease-in-out',
-        slideleft: 'slideleft 2s ease-in-out',
-        slideright: 'slideright 0.5s ease-in-out forwards',
+        slideup: 'slideup 0.2s ease-in-out forwards',
+        slidedown: 'slidedown 0.5s ease-in-out forwards',
+        slideleft: 'slideleft 2s ease-in-out forwards',
+        slideright: 'slideright 2s ease-in-out forwards',
         wave: 'wave 1.2s linear ease-in-out',
         slightrotate: 'slightrotate 1s ease-in-out forwards',
         clickhere: 'clickhere 2s ease-in-out infinite',
         jello: 'jello 2s ease-in-out',
-
+        grow: 'grow 1s ease-in-out forwards'
       },
       fontSize: {
         big: '52px',
@@ -116,6 +116,15 @@ module.exports = {
           '100%': {
             transform: 'skewX(0deg) skewY(0deg)'
           }
+        },
+        grow: {
+          '0%': {
+            opacity: 0,transform: 'scale(0.1)'
+          },
+          '100%': {
+            opacity: 1,transform: 'scale(1)'
+          }
+          
         }
       }
     },
